@@ -1,24 +1,48 @@
 import React, { Component } from 'react';
 import Header from './Header';
+import './App.css';
 
 class App extends Component {
+  
   render() {
+
+    let subscriber = [
+      {
+        id:1,
+        name: "Shubham",
+        phone: "9032135549"
+      },
+      {
+        id:2,
+        name: "Ashutosh",
+        phone: "9545623007"
+      }
+    ];
     return (
       // JSX Code written below
-      <div>
-        <Header/>
-        <button> Add </button>
-        <div>
-          <span>Name</span><br />
-          <span>Phone</span>
+      <div  className='component-body-container'>
+        <Header />
+        <button className='custom-btn add-btn'> Add </button>
+        <div className='flex-container'>
+          <span className='name-heading'>Name</span><br />
+          <span className='phone-heading'>Phone</span>
         </div>
 
+        {
+          subscriber.map(sub =>{
+            return <div key={sub.id} className='flex-container'>
+              <span className="name-heading">{sub.name}</span><br />
+              <span className="phone-heading">{sub.phone}</span>
+            </div>
+          })
+        }
+        
       </div>
     );
   }
 }
 
- export default App;
+export default App;
 
 // create JSX Element using JavaScript CreateElement Methode
 
