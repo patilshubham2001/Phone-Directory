@@ -24,15 +24,19 @@ class App extends Component {
         <Header />
         <button className='custom-btn add-btn'> Add </button>
         <div className='flex-container'>
-          <span className='name-heading'>Name</span><br />
-          <span className='phone-heading'>Phone</span>
+          <span className='item-heading'>Name</span><br />
+          <span className='item-heading'>Phone</span>
         </div>
 
         {
           subscriber.map(sub =>{
             return <div key={sub.id} className='flex-container'>
-              <span className="name-heading">{sub.name}</span><br />
-              <span className="phone-heading">{sub.phone}</span>
+              <span className="item-heading">{sub.name}</span><br />
+              <span className="item-heading">{sub.phone}</span>
+              
+              <button className='btn-delete-contact'>Delete</button>
+              
+             
             </div>
           })
         }
