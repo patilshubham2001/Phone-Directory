@@ -24,8 +24,8 @@
 .flex-container{
     display: flex;
     font-size: 20px;
-    font-weight: bold;
-    color: #575656;
+    font-weight: 700;
+    color: #7d7a7a;
     text-transform: uppercase;
     margin-top: 2%;
 }
@@ -34,11 +34,16 @@
    width: 20%;
 }
 
+.element{
+    color: black;
+}
+
 .btn-delete-contact{
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 700;
     padding: 10px;
     background: #fa9c9c;
+    color: #000;
     text-transform: uppercase;
     border: none;
     cursor: pointer;

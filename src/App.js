@@ -3,24 +3,24 @@ import Header from './Header';
 import './App.css';
 
 class App extends Component {
-  
+
   render() {
 
     let subscriber = [
       {
-        id:1,
+        id: 1,
         name: "Shubham",
         phone: "9032135549"
       },
       {
-        id:2,
+        id: 2,
         name: "Ashutosh",
         phone: "9545623007"
       }
     ];
     return (
       // JSX Code written below
-      <div  className='component-body-container'>
+      <div className='component-body-container'>
         <Header />
         <button className='custom-btn add-btn'> Add </button>
         <div className='flex-container'>
@@ -29,18 +29,15 @@ class App extends Component {
         </div>
 
         {
-          subscriber.map(sub =>{
+          subscriber.map(sub => {
             return <div key={sub.id} className='flex-container'>
-              <span className="item-heading">{sub.name}</span><br />
-              <span className="item-heading">{sub.phone}</span>
-              
+              <span className="item-heading element">{sub.name}</span><br />
+              <span className="item-heading element">{sub.phone}</span>
               <button className='btn-delete-contact'>Delete</button>
-              
-             
             </div>
           })
         }
-        
+
       </div>
     );
   }
