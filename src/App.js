@@ -21,7 +21,7 @@ class App extends Component {
     return (
       // JSX Code written below
       <div className='component-body-container'>
-        <Header />
+        <Header heading="Phone Directory" />
         <button className='custom-btn add-btn'> Add </button>
         <div className='flex-container'>
           <span className='item-heading'>Name</span><br />
@@ -37,7 +37,6 @@ class App extends Component {
             </div>
           })
         }
-
       </div>
     );
   }
