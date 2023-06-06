@@ -1,27 +1,4 @@
-.component-body-container {
-    padding: 20px;
-}
-
-.custom-btn {
-    padding: 10px;
-    border: none;
-    margin-right: 10px;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-weight: bold;
-    width: 80px;
-    outline: none;
-    margin-top: 2%;
-}
-
-.add-btn {
-    border-radius: 5%;
-    background:  #7ab97a;
-    color: #fff;
-}
-
-.flex-container{
+.flex-container {
     display: flex;
     font-size: 20px;
     font-weight: 700;
@@ -31,14 +8,14 @@
 }
 
 .item-heading {
-   width: 20%;
+    width: 20%;
 }
 
-.element{
+.element {
     color: black;
 }
 
-.btn-delete-contact{
+.btn-delete-contact {
     font-size: 15px;
     font-weight: 700;
     padding: 10px;
@@ -49,4 +26,3 @@
     cursor: pointer;
     border-radius: 5%;
 }
-

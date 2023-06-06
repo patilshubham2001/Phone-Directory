@@ -1,0 +1,32 @@
+.subscriber-form {
+    margin-top: 30px;
+}
+
+.label-control {
+    color: #808080;
+    font-size: 20px;
+}
+
+.input-control {
+    width: 300px;
+    padding: 10px 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+}
+
+.subscriber-info-container {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.subscriber-to-add-heading {
+    font-weight: 600;
+    color: #0a4f75;
+}
+
+.subscriber-info {
+    color: #808080;
+}
