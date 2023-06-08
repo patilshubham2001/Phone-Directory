@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import './ShowSubscriber.css';
 import './common/common.css'
+import { Link } from 'react-router-dom'
 
 
 // let subscriber = [
@@ -25,7 +26,7 @@ class ShowSubscriber extends Component {
       <div>
         <Header heading="Phone Directory" />
         <div className='component-body-container'>
-          <button className='custom-btn add-btn'> Add </button>
+          <Link to="/add"><button className='custom-btn add-btn'> Add </button></Link>
           <div className='flex-container'>
             <span className='item-heading'>Name</span><br />
             <span className='item-heading'>Phone</span>
